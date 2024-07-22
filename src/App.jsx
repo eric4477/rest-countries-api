@@ -1,11 +1,10 @@
 import "./App.css";
-import Header from "./components/Header/Header";
+import Header from "./components/Header";
 import useDarkMode from "./hooks/useDarkMode";
-
 function App() {
-  const [isDarkMode, toggleDarkMode] = useDarkMode();
+  const [isDarkMode] = useDarkMode();
   return (
-    <div className="app bg-lightColors-white">
+    <div className="app">
       <Header />
     </div>
   );
